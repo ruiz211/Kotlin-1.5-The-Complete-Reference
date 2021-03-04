@@ -1,4 +1,4 @@
-package com.ruiz211.kotlinlanguage.I.basics
+package com.ruiz211.kotlinlanguage.i.basics
 
 var name: String = "Charles"
 val PI = Math.PI
