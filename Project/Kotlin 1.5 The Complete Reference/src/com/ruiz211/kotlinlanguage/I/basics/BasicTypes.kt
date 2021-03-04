@@ -13,4 +13,11 @@ var oneFloat: Float = Float.MAX_VALUE
 val oneBoolean: Boolean = false
 
 
+//Strings
+var string: String = one.toString()
 
+
+fun main(args: Array<String>) {
+    println(oneFloat)
+    println(string)
+}
