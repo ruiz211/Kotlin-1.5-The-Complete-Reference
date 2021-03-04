@@ -17,7 +17,13 @@ val oneBoolean: Boolean = false
 var string: String = one.toString()
 
 
+//Arrays
+var names: Array<String> = arrayOf("Monica", "Charles", "Camila", "John", "Peter")
+
+
 fun main(args: Array<String>) {
     println(oneFloat)
-    println(string)
+    println(string.plus("..."))
+
+    names.sortedArray().forEach { s: String -> println(s) }
 }
