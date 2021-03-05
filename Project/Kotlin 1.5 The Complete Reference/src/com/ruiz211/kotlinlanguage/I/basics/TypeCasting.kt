@@ -1,4 +1,4 @@
-package com.ruiz211.kotlinlanguage.I.basics
+package com.ruiz211.kotlinlanguage.i.basics
 
 
 var values: Array<Any> = arrayOf("String", 11, true, 101F)
