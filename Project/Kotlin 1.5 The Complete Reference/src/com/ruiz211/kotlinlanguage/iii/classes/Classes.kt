@@ -2,7 +2,7 @@ package com.ruiz211.kotlinlanguage.iii.classes
 
 fun main(args: Array<String>) {
     val person = Person("Charles", "Xavier")
-    val second = Person(person.name, person.surname, person)
+    val second = Person(person.name, person.surname, 11)
 
     person.name = "John".also(::println)
     person.surname = "Chaplin".also(::println)
@@ -12,11 +12,10 @@ fun main(args: Array<String>) {
 
 }
 
-class Person constructor(var name: String, var surname: String) {
-    private var people: MutableList<Person> = mutableListOf()
-
-    constructor(name: String, surname: String, parent: Person) : this(name, surname) {
-        parent.people.add(this)
+class Person(var name: String, var surname: String) {
+    constructor(name: String, surname: String, number: Int) : this(name, surname) {
+        this.name = name
+        this.surname = surname
     }
 
     override fun toString(): String {
